@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val buttonChangeText = findViewById<Button>(R.id.buttonChangeText)
-        val buttonChangeColor = findViewById<Button>(R.id.buttonChangeColor)
+
         val textView = findViewById<TextView>(R.id.textView)
 
         buttonChangeText.setOnClickListener {
@@ -23,9 +23,7 @@ class MainActivity : AppCompatActivity() {
             textView.text = "Text has been changed!"
         }
 
-        buttonChangeColor.setOnClickListener {
-            textView.setTextColor(Color.RED)
-        }
+
     }
 
 
